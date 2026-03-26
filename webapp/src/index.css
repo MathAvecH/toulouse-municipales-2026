@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -11,33 +11,24 @@
 
 body {
   margin: 0;
-  background-color: #f8fafc; /* Slate 50 */
-  color: #0f172a; /* Slate 900 */
+  background-color: #f8fafc;
+  color: #0f172a;
   -webkit-font-smoothing: antialiased;
 }
 
-/* Hyper-Clean Surfaces */
+/* Clean Surfaces */
 .surface-clean {
   background: #ffffff;
-  border: 1px solid #e2e8f0; /* Slate 200 */
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08), 0 1px 2px -1px rgba(0, 0, 0, 0.08);
 }
 
 .surface-muted {
-  background: #f1f5f9; /* Slate 100 */
+  background: #f1f5f9;
   border: 1px solid #e2e8f0;
 }
 
-/* Subtle Data Accents - Toulouse Red */
-.accent-toulouse {
-  color: #e2001a;
-}
-
-.bg-toulouse {
-  background-color: #e2001a;
-}
-
-/* Typography refinements */
+/* Typography */
 h1, h2, h3, h4 {
   color: #0f172a;
   letter-spacing: -0.01em;
@@ -47,9 +38,10 @@ h1, h2, h3, h4 {
   font-family: 'JetBrains Mono', monospace;
 }
 
-/* Custom Scrollbar - Hyper Minimal */
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 4px;
+  height: 4px;
 }
 ::-webkit-scrollbar-track {
   background: transparent;
@@ -62,17 +54,39 @@ h1, h2, h3, h4 {
   background: #94a3b8;
 }
 
-/* Leaflet Map - Light/Muted Theme */
+/* Leaflet theme — light, clean */
 .leaflet-container {
   background: #f1f5f9 !important;
-  border-radius: 0.5rem;
+  border-radius: 0;
+  font-family: 'Inter', sans-serif !important;
 }
 
 .leaflet-tile-pane {
-  filter: grayscale(100%) opacity(0.6) brightness(1.1);
+  filter: grayscale(30%) brightness(1.05) contrast(0.95);
 }
 
-/* Animations - Discrete */
+/* Custom Leaflet tooltip */
+.custom-tooltip {
+  background: white !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+  padding: 8px 12px !important;
+  font-family: 'Inter', sans-serif !important;
+}
+.custom-tooltip::before {
+  border-top-color: white !important;
+}
+
+/* Transitions */
 .transition-standard {
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Remove leaflet attribution */
+.leaflet-control-attribution {
+  font-size: 8px !important;
+  background: rgba(255,255,255,0.7) !important;
+  padding: 2px 6px !important;
+  border-radius: 4px !important;
 }
