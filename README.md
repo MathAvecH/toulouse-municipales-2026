@@ -2,7 +2,7 @@
 
 Ce projet propose une analyse interactive et hautement performante des résultats des élections municipales de 2026 à Toulouse. 
 
-**[DÉMO LIVE ICI](https://vassal.github.io/toulouse-municipales-2026/)** *(Remplacez par votre lien GitHub Pages)*
+**[DÉMO LIVE ICI](https://MathAvecH.github.io/toulouse-municipales-2026/)** *(Remplacez par votre lien GitHub Pages)*
 
 ---
 
