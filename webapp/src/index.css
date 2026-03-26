@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  background-color: #f8fafc; /* Slate 50 */
+  color: #0f172a; /* Slate 900 */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hyper-Clean Surfaces */
+.surface-clean {
+  background: #ffffff;
+  border: 1px solid #e2e8f0; /* Slate 200 */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+.surface-muted {
+  background: #f1f5f9; /* Slate 100 */
+  border: 1px solid #e2e8f0;
+}
+
+/* Subtle Data Accents - Toulouse Red */
+.accent-toulouse {
+  color: #e2001a;
+}
+
+.bg-toulouse {
+  background-color: #e2001a;
+}
+
+/* Typography refinements */
+h1, h2, h3, h4 {
+  color: #0f172a;
+  letter-spacing: -0.01em;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom Scrollbar - Hyper Minimal */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Leaflet Map - Light/Muted Theme */
+.leaflet-container {
+  background: #f1f5f9 !important;
+  border-radius: 0.5rem;
+}
+
+.leaflet-tile-pane {
+  filter: grayscale(100%) opacity(0.6) brightness(1.1);
+}
+
+/* Animations - Discrete */
+.transition-standard {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
